@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuitareCustom.MesCommandes">
+
+    <NavigationPage.TitleView>
+        <Label Text="Vos Commandes" TextColor="White" FontSize="Large"/>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Grid.Row="0" Text="Etat Commande" FontSize="Medium"/>
+                    <Label  Grid.Column="0" Grid.Row="1" Text="Bois Manche " FontSize="Medium" BackgroundColor="#474747"/>
+                    <Label Grid.Column="0" Grid.Row="2" Text="Bois Touche " FontSize="Medium"/>
+                    <Label Grid.Column="0" Grid.Row="3" Text="Bois Corps " FontSize="Medium" BackgroundColor="#474747"/>
+                    <Label Grid.Column="0" Grid.Row="4" Text="Micro Neck " FontSize="Medium"/>
+                    <Label Grid.Column="0" Grid.Row="5" Text="Micro Bridge " FontSize="Medium" BackgroundColor="#474747"/>
+                    <Label Grid.Column="0" Grid.Row="6" Text="Micro Central " FontSize="Medium"/>
+                    <Label Grid.Column="0" Grid.Row="7" Text="Vibrato " FontSize="Medium" BackgroundColor="#474747" Margin="0,0,0,0"/>
+
+
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label x:Name="Etat_commande" Grid.Row="0"  Text="t" FontSize="Medium"/>
+                    <Label Grid.Row="1" x:Name="id_Bois" Text="tt" FontSize="Medium" BackgroundColor="#474747"/>
+                    <Label Grid.Row="2" x:Name="id_Bois1" Text="t" FontSize="Medium"/>
+                    <Label Grid.Row="3" x:Name="id_Bois2" Text="t" FontSize="Medium" BackgroundColor="#474747"/>
+                    <Label Grid.Row="4" x:Name="id_Micro" Text="t" FontSize="Medium"/>
+                    <Label Grid.Row="5" x:Name="id_Micro1" Text="t" FontSize="Medium" BackgroundColor="#474747"/>
+                    <Label Grid.Row="6" x:Name="id_Micro2" Text="t" FontSize="Medium" />
+                    <Label Grid.Row="7" x:Name="nomVibrato" Text="t" FontSize="Medium" BackgroundColor="#474747"/>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

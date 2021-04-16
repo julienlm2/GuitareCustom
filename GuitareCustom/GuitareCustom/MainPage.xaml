@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuitareCustom.MainPage">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+        <Image Source="guitar.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label Text="Guitare Custom" FontSize="35" TextColor="White" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></Label>
+            <Image Source="guitar.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <StackLayout BackgroundColor="#1D1D1D">
+        
+
+        <Label x:Name="TBX_CONNECTER" Text="S'enregistrer" FontSize="50" TextColor="White" Padding="30,70,30,30" HorizontalOptions="Center"/>
+        <Entry x:Name="TBX_NOM" Placeholder="Nom" FontSize="24" Margin="10" ></Entry>
+        <Entry x:Name="TBX_MAIL" Placeholder="Adresse Mail" FontSize="24" Margin="10"></Entry>
+        <Entry x:Name="TBX_TEL" Placeholder="Numéro de téléphone" FontSize="24" Margin="10"></Entry>
+        
+        <Button x:Name="BTN_CREER_COMPTE" Text="Créer un compte" Margin="20,0,20,0" Clicked="BTN_CREER_COMPTE_Clicked"></Button>
+        
+        <Button x:Name="BTN_ENREGISTRER" Text="Valider" BackgroundColor="#609852" FontSize="24" Margin="20" BorderColor="White" BorderWidth="1" Clicked="BTN_ENREGISTRER_Clicked"></Button>
+        <Label x:Name="Time" FontSize="16" Text="Time" HorizontalOptions="Center" Padding="30,24,30,0"/>
+        <Button x:Name="BTN_Connecter" Text="Retour à la commande" BackgroundColor="#609852" FontSize="24" Margin="20" BorderColor="White" BorderWidth="1" Clicked="BTN_Connecter_Clicked"></Button>
+
+
+    </StackLayout>
+
+</ContentPage>

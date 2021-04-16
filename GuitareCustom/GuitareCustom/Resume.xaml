@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuitareCustom.Resume">
+    <ContentPage.Content>
+        <StackLayout Background="#1D1D1D">
+            <Label Text="Resume de la commande" FontSize="35" TextColor="White" HorizontalOptions="Center" Padding="10"></Label>
+
+            <Label TextColor="LightGreen" x:Name="Microneck" Text="Microneck" FontSize="30" Padding="10,30,0,10"></Label>
+            <Label TextColor="LightGreen" x:Name="Microbridge" Text="Microbridge" FontSize="30" Padding="10,10,0,10"></Label>
+            <Label TextColor="LightGreen" x:Name="MicroCentral" Text="MicroCentral" FontSize="30" Padding="10,10,0,0"></Label>
+
+            <Label Text="________________________________" FontSize="30"></Label>
+
+            <Label TextColor="LightYellow" x:Name="Manche" Text="Manche" FontSize="30" Padding="10,10,0,10"></Label>
+            <Label TextColor="LightYellow" x:Name="Touche" Text="Touche" FontSize="30" Padding="10,10,0,10"></Label>
+            <Label TextColor="LightYellow" x:Name="lbl_Corps" Text="Corps" FontSize="30" Padding="10,10,0,0"></Label>
+
+            <Label Text="________________________________" FontSize="30"></Label>
+
+            <Label TextColor="LightCoral" x:Name="lbl_Vibrato" Text="Vibrato" FontSize="30" Padding="10,10,0,130"></Label>
+
+            <Button Text="Valider la commande" Clicked="Button_Clicked" BackgroundColor="#609852" FontSize="24" Margin="20" BorderColor="White" BorderWidth="1"></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

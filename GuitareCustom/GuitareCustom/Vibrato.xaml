@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuitareCustom.Vibrato">
+
+    <NavigationPage.TitleView>
+        <Label x:Name="lbl_nom_session" Text="Guitare Custom" TextColor="White" FontSize="Large"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout Background="#1D1D1D">
+            <Label Text="Choix du Vibrato" FontSize="40" TextColor="White" HorizontalOptions="Center" Padding="10"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="4*" />
+                </Grid.RowDefinitions>
+                
+                <ListView ItemSelected="LST_Vibrato_ItemSelected" Grid.Row="0" Background="#1D1D1D" x:Name="LST_Vibrato">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding nomVibrato}"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Image Grid.Row="1" Source="Vibrato.jpg" Scale="0.6"></Image>
+
+                
+
+            </Grid>
+            <Button x:Name="BTN_enregistrerVibrato" Text="Enregistrer" HorizontalOptions="Center" BackgroundColor="Green" BorderColor="White" BorderWidth="0.5" Margin="13" Clicked="BTN_enregistrerVibrato_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

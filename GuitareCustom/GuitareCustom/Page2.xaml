@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuitareCustom.Page2">
+
+    <NavigationPage.TitleView>
+        <Label x:Name="lbl_nom_session" Text="Guitare Custom" TextColor="White" FontSize="Large"/>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+
+        
+        <StackLayout BackgroundColor="#1D1D1D">
+            
+            <Label Text="Choix des bois" FontSize="40" TextColor="White" HorizontalOptions="Center" Padding="10" ></Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="3*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+
+                <ListView ItemSelected="LST_Bois1_ItemSelected" x:Name="LST_Bois1"  BackgroundColor="#1D1D1D">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding NomBois}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Image Grid.Column="1" Source="manche.jpg"></Image>
+
+                <ListView ItemSelected="LST_Bois2_ItemSelected" Grid.Row="1" Background="#1D1D1D" x:Name="LST_Bois2">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding NomBois}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Image Grid.Column="1" Grid.Row="1" Source="touche.jpg"></Image>
+
+                <ListView ItemSelected="LST_Bois3_ItemSelected" Grid.Row="2" Background="#1D1D1D" x:Name="LST_Bois3">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding NomBois}" TextColor="White"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Image Grid.Column="1" Grid.Row="2" Source="corps.jpg"></Image>
+
+            </Grid>
+            <Button x:Name="BTN_enregistrerBois" Text="Enregistrer" HorizontalOptions="Center" BackgroundColor="Green" BorderColor="White" BorderWidth="0.5" Margin="13" Clicked="BTN_enregistrerBois_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

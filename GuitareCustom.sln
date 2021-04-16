@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitareCustom.Android", "GuitareCustom\GuitareCustom.Android\GuitareCustom.Android.csproj", "{ED65F33A-8E93-4A43-9BCF-C39162826C2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitareCustom", "GuitareCustom\GuitareCustom\GuitareCustom.csproj", "{8DD31F80-ACD7-4F8F-B775-C7FDB682099B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED65F33A-8E93-4A43-9BCF-C39162826C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED65F33A-8E93-4A43-9BCF-C39162826C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED65F33A-8E93-4A43-9BCF-C39162826C2E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{ED65F33A-8E93-4A43-9BCF-C39162826C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED65F33A-8E93-4A43-9BCF-C39162826C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED65F33A-8E93-4A43-9BCF-C39162826C2E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8DD31F80-ACD7-4F8F-B775-C7FDB682099B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DD31F80-ACD7-4F8F-B775-C7FDB682099B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DD31F80-ACD7-4F8F-B775-C7FDB682099B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8DD31F80-ACD7-4F8F-B775-C7FDB682099B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DD31F80-ACD7-4F8F-B775-C7FDB682099B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DD31F80-ACD7-4F8F-B775-C7FDB682099B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A66DDAC-1397-4610-B2B6-423F3555E695}
+	EndGlobalSection
+EndGlobal
